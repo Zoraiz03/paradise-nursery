@@ -4,7 +4,8 @@ import { addItem, selectCartItems } from '../store/CartSlice'
 import Navbar from './Navbar'
 import '../App.css'
 
-const plantsData = [
+
+  const plantsData = [
   {
     category: 'Air-Purifying Plants',
     icon: '💨',
@@ -13,37 +14,37 @@ const plantsData = [
       {
         name: 'Peace Lily',
         price: 18.99,
-        image: 'https://images.unsplash.com/photo-1616690248441-798ec5dfdc45?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=500&q=80',
         description: 'Elegant white blooms, thrives in low light conditions.',
       },
       {
         name: 'Spider Plant',
         price: 12.99,
-        image: 'https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=500&q=80',
         description: 'Perfect for beginners with beautiful arching leaves.',
       },
       {
         name: 'Snake Plant',
         price: 22.99,
-        image: 'https://images.unsplash.com/photo-1598880940952-64f8f21c7b5b?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&q=80',
         description: 'Tolerates neglect and low light beautifully.',
       },
       {
         name: 'Dracaena',
         price: 27.99,
-        image: 'https://images.unsplash.com/photo-1637967886160-fd78dc3ce3f5?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=500&q=80',
         description: 'Striking striped leaves with very low maintenance.',
       },
       {
         name: 'Golden Pothos',
         price: 14.99,
-        image: 'https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd169b7?w=500&q=80',
         description: 'Fast grower with gorgeous trailing golden vines.',
       },
       {
         name: 'Boston Fern',
         price: 16.99,
-        image: 'https://images.unsplash.com/photo-1597305877032-0668b3c6413a?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80',
         description: 'Lush feathery fronds, loves humid environments.',
       },
     ],
@@ -56,37 +57,37 @@ const plantsData = [
       {
         name: 'Monstera Deliciosa',
         price: 34.99,
-        image: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&q=80',
         description: 'Iconic split leaves, the undisputed queen of houseplants.',
       },
       {
         name: 'Bird of Paradise',
         price: 48.99,
-        image: 'https://images.unsplash.com/photo-1604480132736-44c188fe4d20?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1584337456520-b7e1f1a5c59d?w=500&q=80',
         description: 'Bold tropical statement plant for bright sunny spaces.',
       },
       {
         name: 'Calathea Orbifolia',
         price: 29.99,
-        image: 'https://images.unsplash.com/photo-1617957718587-8b1e7b576b70?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1598965402089-897ce52e8355?w=500&q=80',
         description: 'Stunning silver-striped round leaves, truly mesmerizing.',
       },
       {
         name: 'Philodendron Brasil',
         price: 19.99,
-        image: 'https://images.unsplash.com/photo-1591958911259-bee2173bdcab?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1588596266507-1de6ce27eb48?w=500&q=80',
         description: 'Vibrant yellow-green variegated heart-shaped leaves.',
       },
       {
         name: 'Alocasia Polly',
         price: 32.99,
-        image: 'https://images.unsplash.com/photo-1599598425947-5202edd56bdb?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1604596788857-e977e71370e3?w=500&q=80',
         description: 'Deep green leaves with striking white veins.',
       },
       {
         name: 'Banana Plant',
         price: 39.99,
-        image: 'https://images.unsplash.com/photo-1587116861421-f4ad4e95bbf2?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1552475385-c4e9a4a0fc18?w=500&q=80',
         description: 'Brings dramatic tropical vibes to any indoor space.',
       },
     ],
@@ -99,37 +100,37 @@ const plantsData = [
       {
         name: 'Echeveria Elegans',
         price: 9.99,
-        image: 'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1570599326847-df76c22e969f?w=500&q=80',
         description: 'Perfect rosette shape in pastel blue-green tones.',
       },
       {
         name: 'Barrel Cactus',
         price: 11.99,
-        image: 'https://images.unsplash.com/photo-1520302630591-fd1a1c393a70?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1596621006007-11e4371d98e6?w=500&q=80',
         description: 'Classic round cactus, virtually indestructible.',
       },
       {
         name: 'Aloe Vera',
         price: 15.99,
-        image: 'https://images.unsplash.com/photo-1598965402089-897ce52e8355?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd169b7?w=500&q=80',
         description: 'Medicinal marvel with sculptural natural appeal.',
       },
       {
         name: 'Jade Plant',
         price: 17.99,
-        image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1609893121220-74936b8f3d1c?w=500&q=80',
         description: 'Thick oval leaves, traditionally brings good luck.',
       },
       {
         name: 'String of Pearls',
         price: 21.99,
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=500&q=80',
         description: 'Cascading bead-like leaves, utterly unique trailing plant.',
       },
       {
         name: 'Zebra Haworthia',
         price: 13.99,
-        image: 'https://images.unsplash.com/photo-1624560152536-2d31cf2d8eff?w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1602696860147-63c76d6c2a52?w=500&q=80',
         description: 'Striped miniature succulent, perfect for desks.',
       },
     ],
